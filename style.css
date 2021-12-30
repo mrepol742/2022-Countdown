@@ -1,0 +1,67 @@
+.nextStep,#hide {
+    visibility: hidden;
+}
+
+.animate {
+    stroke-dasharray: 100;
+    animation: dash 1.5s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 400;
+    }
+}
+
+#timer {
+    display: flex;
+    width: -webkit-fill-available;
+    border: 1px solid #ccc;
+    padding: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    background: slategray;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.sub {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid black;
+    margin: 3px 3px;
+    padding: 3px;
+    background: black;
+    border-radius: 5px;
+}
+
+.sub svg {
+    height: 50px;
+    width: auto;
+    object-fit: scale-down;
+}
+
+body{
+    background: black;
+}
+
+@media (min-width: 1000px) {
+    .sub svg {
+        height: 170px;
+        margin: 0px 10px
+    }
+    .sub{
+        margin: 10px 10px;
+    }
+}
