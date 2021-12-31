@@ -1,0 +1,132 @@
+        @font-face{
+	           font-family: 'Digital-7';
+	           src: url('digital-7-mono.ttf');
+            }
+         body {
+	          background: linear-gradient(to right, #fc00ff, #00dbde);
+	          }
+	          
+         .container{
+             width: 330px;
+             height: 250px;
+             position: absolute;
+             margin: auto;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             top: 0;
+             
+         }
+         .countdown{
+             width: 330px;
+             height: 95px;
+             top: 0;
+             display: flex;
+             align-items: center;
+             justify-contents: space-between;
+             
+         }
+         .countdown div{
+             font-family: 'Digital-7', sans-serif;
+             height: 90%;
+             width: 150px;
+             background: #fff;
+             position: relative;
+             font-size: 35px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border-top-left-radius: 10px;
+	          border-top-right-radius: 10px;
+             box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+             letter-spacing: 1.5px;
+             margin: 10px
+           }
+          .countdown div::before{
+           content: "";
+           font-family: sans-serif;
+	        width: 49px;
+	        height: 30px;
+	        display: flex;
+	        flex-direction: row;
+	        justify-content: space-between;
+	        align-items: center;
+	        left: 0;
+	        top: 60px;
+	        height: 30%;
+	        position: absolute;
+	        background: green;
+	        color: #fff;
+	        font-size: 10px;
+	        font-weight: 700;
+	        padding-left: 5px;
+	       
+           }
+           
+          .countdown #day::before{
+	         content: "Days" 
+          }
+          
+          .countdown #hour::before{
+	         content: "Hours";
+         }
+         
+           .countdown #minute::before{
+	         content: "Minutes"; 
+          }
+          
+          .countdown #second::before{
+	         content: "Seconds"; 
+          }
+          
+          .countdown span{
+             font-weight: 900;
+             font-size: 40px;
+             color: #fff;
+          }
+          
+          h2{
+          color: #fff;
+          text-align: center;
+          font-weight: 900;
+          font-family: Helvetica, sans-serif;
+          border-bottom: 2px solid green;
+          }
+          
+          h2 .text{
+          display: block;
+          text-align: center;
+          color: lime;
+          }
+          
+          h2 .new{
+	      color: lime;
+         }
+         
+         h2 .to{
+	      color: #fff;
+	      display: inline;
+        }
+        
+        h2.year{
+	     color: #dd2c00;
+       }
+       
+       .message{
+	   width: 200px;
+	   height: 50px;
+	   position: relative;
+	   left: 70px;
+	   top: 50px;
+	   color: #fff;
+	   font-size: 20px;
+	   font-weight: 900;
+	   font-family: 'Times New Roman', serif;
+	   background: #333;
+	   	   	   
+      }
+      
+      .code{
+	  color: lime;
+}
+     
